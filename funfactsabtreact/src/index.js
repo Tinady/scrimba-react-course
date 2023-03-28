@@ -12,6 +12,6 @@ const page=(
   </ul>
 
   </div>
-)
+) 
 
 ReactDOM.render(page, document.getElementById("root"))
