@@ -1,9 +1,10 @@
 import React from "react";
 import  ReactDOM from "react-dom";
+import logo from "./logo.svg"
 
 const page=(
   <div>
-  <img src="./react-logo.png" width="480px"/>
+  <img src={logo} width="60px"/>
   <h1>Fun facts about react</h1>
   <ul>
     <li>was first released in 2013</li>
