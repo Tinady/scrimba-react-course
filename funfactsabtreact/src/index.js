@@ -5,13 +5,21 @@ import logo from "./react-logo.png";
 function FirstFunction(){
 return(
   <div>
-    <img src={logo} alt="react logo"/>
-      <h1> Funfacts abt react</h1>
+   
+      <header>
+        <navbar>
+        <img src={logo} alt="react logo" width="40px"/>
+
+        </navbar>
+      </header>
       <ul>
-        <li>hi</li>
-        <li>hey</li>
-        <li>hello</li>
+        <li>It is composable</li>
+        <li>  It is declarative</li>
+        <li>It is well known</li>
       </ul>
+      <footer>
+    <small>© 2023 Tina's development. All rights reserved.</small>  
+      </footer>
 
   </div>
 )
