@@ -6,8 +6,8 @@ import "./index.css"
 function Header() {
   return(
   <header>
-    <nav>
-      <img src={logo} alt="" width="40px"/>
+    <nav className="nav">
+      <img src={logo} alt="" />
       <ul className="nav-items">
         <li>Pricing</li>
         <li>About</li>
