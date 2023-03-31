@@ -41,10 +41,8 @@ function Page()
       <MainPage />
       <Footer />
       </div>
-
-
-  )
+      )
 }
 
 
-ReactDOM.render(<Page/>,document.getElementById("root"))
+ReactDOM.render(<Page/> , document.getElementById("root"))
