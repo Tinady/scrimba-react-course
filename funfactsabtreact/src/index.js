@@ -1,18 +1,20 @@
 import React from "react";
-import  ReactDOM from "react-dom";
-import logo from "./logo.svg"
+import ReactDOM  from "react-dom";
+import logo from "./logo.svg";
 
-const page=(
+function FirstFunction(){
+return(
   <div>
-  <img src={logo} width="60px"/>
-  <h1>Fun facts about react</h1>
-  <ul>
-    <li>was first released in 2013</li>
-    <li>was orginally created by Jordan Walke</li>
-    <li>has well over 100k starts on Github</li>
-  </ul>
-
+    <img src={logo} alt="react logo">
+      <h1> Funfacts abt react</h1>
+      <ul>
+        <li>hi</li>
+        <li>hey</li>
+        <li>hello</li>
+      </ul>
+    </img>
   </div>
-) 
+)
+}
 
-ReactDOM.render(page, document.getElementById("root"))
+ReactDOM.render(<FirstFunction/>,document.getElementById("root"))
