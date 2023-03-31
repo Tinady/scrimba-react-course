@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
 import logo from "./react-logo.png";
+import "./index.css"
 
 function Header() {
   return(
   <header>
     <nav>
       <img src={logo} alt="" width="40px"/>
-      <ul>
+      <ul ClassName="nav-items">
         <li>Pricing</li>
         <li>About</li>
         <li>Contact</li>
