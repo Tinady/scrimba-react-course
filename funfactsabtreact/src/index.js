@@ -1,16 +1,17 @@
 import React from "react";
-import ReactDOM  from "react-dom";
+import ReactDOM  from "react-dom/client";
 import logo from "./react-logo.png";
 
-function Header(){
+function Header() {
+  return(
   <header>
     <nav>
-      <img src={logo} alt=""/>
+      <img src={logo} alt="" width="40px"/>
     </nav>
-  </header>
+  </header>)
 }
 
-function MainPage(){
+function MainContent(){
 return(
   <div>
    
@@ -28,9 +29,10 @@ return(
 }
 
 function Footer(){
+  return(
   <footer>
   <small>© 2023 Tina's development. All rights reserved.</small>  
-    </footer>
+    </footer>)
 }
 
 function Page()
@@ -38,11 +40,16 @@ function Page()
   return(
     <div>
       <Header />
-      <MainPage />
+      <MainContent />
       <Footer />
       </div>
       )
 }
 
 
-ReactDOM.render(<Page/> , document.getElementById("root"))
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Page />
+  </React.StrictMode>
+);
