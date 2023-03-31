@@ -2,16 +2,19 @@ import React from "react";
 import ReactDOM  from "react-dom";
 import logo from "./react-logo.png";
 
-function FirstFunction(){
+function HeaderPage(){
+  <header>
+    <nav>
+      <img src={logo}/>
+    </nav>
+  </header>
+}
+
+function MainPage(){
 return(
   <div>
    
-      <header>
-        <navbar>
-        <img src={logo} alt="react logo" width="40px"/>
-
-        </navbar>
-      </header>
+     
       <ul>
         <li>It is composable</li>
         <li>  It is declarative</li>
@@ -25,4 +28,5 @@ return(
 )
 }
 
-ReactDOM.render(<FirstFunction/>,document.getElementById("root"))
+
+ReactDOM.render(<MainPage/>,document.getElementById("root"))
