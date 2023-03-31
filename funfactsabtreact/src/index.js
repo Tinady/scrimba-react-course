@@ -7,6 +7,11 @@ function Header() {
   <header>
     <nav>
       <img src={logo} alt="" width="40px"/>
+      <ul>
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </nav>
   </header>)
 }
