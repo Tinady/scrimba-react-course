@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
+    
 }
 
 nav {
@@ -16,6 +17,7 @@ nav {
     background-color: #21222A;
     height: 90px;
     padding: 30px 25px;
+    margin-bottom:0;
 }
 
 .nav--logo_text, .nav--title {
@@ -38,3 +40,23 @@ nav {
     height: 30px;
     margin-right: 10px;
 }
+
+.main-title{
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+   
+}
+
+.main-title{
+    color:white;
+    font-weight:700;
+   
+}
+
+.container{
+    background-color: rgb(67, 63, 63);
+    margin-top: 0px;
+
+}
+
