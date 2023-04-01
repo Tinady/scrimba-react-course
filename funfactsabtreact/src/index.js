@@ -1,21 +1,9 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-import logo from "./react-logo.png";
+import Header from "./components/Header"
 import "./index.css"
 
-function Header() {
-  return(
-  <header>
-    <nav className="nav">
-      <img src={logo} alt="" />
-      <ul className="nav-items">
-        <li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </header>)
-}
+
 
 function MainContent(){
 return(
