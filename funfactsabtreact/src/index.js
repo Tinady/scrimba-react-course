@@ -1,33 +1,9 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-import Header from "././components/Header"
-import "./index.css"
-
-
-
-function MainContent(){
-return(
-  <div>
-   
-        <h1>Fun Facts about react</h1>
-     
-      <ul>
-        <li>It is composable</li>
-        <li>  It is declarative</li>
-        <li>It is well known</li>
-      </ul>
-    
-
-  </div>
-)
-}
-
-function Footer(){
-  return(
-  <footer>
-  <small>© 2023 Tina's development. All rights reserved.</small>  
-    </footer>)
-}
+import "./index.css";
+import Header from "./Header";
+import Footer from "./Footer"
+import MainContent from "./Maincontent"
 
 function Page()
 {
