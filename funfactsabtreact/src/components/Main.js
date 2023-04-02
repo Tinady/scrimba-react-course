@@ -2,7 +2,7 @@
 import React from "react";
 function  MainContent(){
     return(
-   <div className="container">
+   <main className="container">
     <h1 className="main-title">Fun Facts About React</h1>
     <ul className="lists">
         <li>Was first released in 2013</li>
@@ -11,7 +11,7 @@ function  MainContent(){
         <li> is mainatained by Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ul>
-   </div>
+   </main>
         )
 
 }
