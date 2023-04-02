@@ -11,6 +11,24 @@ body{
     box-shadow:2px 2px rgba(186, 186, 200,0.5) ;
 }
 
-.grp-img{
-   margin-left:350px;
+.hero{
+    display: flex;
+    flex-direction:column ;
+    padding-left: 50px;
+}
+
+.grp--img{
+    max-width: 600px;
+    align-self: center ;
+
+}
+.hero--title{
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.hero--p{
+    max-width: 420px;
+    font-size: 20px;
 }
