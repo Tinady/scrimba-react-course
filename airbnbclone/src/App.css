@@ -32,3 +32,26 @@ body{
     max-width: 420px;
     font-size: 20px;
 }
+
+.card-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    line-height: 5px;;
+
+
+}
+
+
+.cards-img{
+
+    position: realtive;
+}
+
+.cards-sold{
+    position: absolute;
+    background-color: white;
+    left: 50px ;
+    bottom: px;
+}
