@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
+    background-color: #282D35;
     
 }
 
@@ -41,22 +42,44 @@ nav {
     margin-right: 10px;
 }
 
-.main-title{
-    color: white;
-    font-weight: 700;
-    margin-top: 20px;
-   
-}
 
 .main-title{
     color:white;
     font-weight:700;
+   margin: 0px;
+   font-size:39px ;
+   padding-left: 50px;
+   letter-spacing:1px ;
    
 }
 
 .container{
-    background-color: rgb(67, 63, 63);
+    
     margin-top: 0px;
+    padding: 50px 20px;
+    background-image:url(./imgs/react-background.png) ;
+    background-repeat: no-repeat;
+    background-position: right 75%;
+
+
+  
 
 }
+
+.lists{
+    font-size: 24px;
+    max-width: 600px;
+}
+
+.lists li{
+   line-height: 50px;
+    color: white;
+}
+
+.lists li::marker{
+    font-size: 30px;
+    color:#61DAFB; ;
+}
+
+
 
