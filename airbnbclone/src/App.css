@@ -38,7 +38,8 @@ body{
     display: flex;
     flex-direction: column;
     max-width: 250px;
-    line-height: 5px;;
+    line-height: 5px;
+    font-size: 12px;
 
 
 }
@@ -47,11 +48,26 @@ body{
 .cards-img{
 
     position: realtive;
+    border-radius: 2px;
 }
 
 .cards-sold{
     position: absolute;
     background-color: white;
     left: 50px ;
-    bottom: px;
+    margin-top: 10px;
+    padding:2px 5px;
+    border-color:black;
+    border-radius: 10px;
+   
+}
+
+
+span 
+{
+    color: #918E9B;
+}
+
+.star{
+    width:15px;
 }
