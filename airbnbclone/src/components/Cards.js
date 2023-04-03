@@ -15,7 +15,7 @@ export default function Cards()
            <p> <img src={star} className="star"/> <span>5.0 (6). USA</span> </p>
            <p>Life lessons with Katie Zaferes</p>
            <p><b> From $316</b> <span>/person</span></p>
-        </div>
+        </div>  
         </div>
     )
 }
