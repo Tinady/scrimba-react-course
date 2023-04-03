@@ -3,6 +3,7 @@ import Navbar from "./components/nav"
 import Hero from "./components/Hero"
 import Cards from "./components/Cards"
 import Contacts from "./components/Contacts";
+import cat from "./imgs/cat.jpg"
 import "./App.css"
 
 export default function App(){
@@ -14,10 +15,10 @@ export default function App(){
         <Cards/> */
        
           <div className="contact-cards">
-         <Contacts/>
-          <Contacts/>
-          <Contacts/>
-          <Contacts/>
+         <Contacts img={cat}/>
+          <Contacts img={cat}/>
+          <Contacts img={cat}/>
+          <Contacts img={cat}/>
             </div>
 
         }
