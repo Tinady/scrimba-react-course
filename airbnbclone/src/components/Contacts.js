@@ -11,5 +11,5 @@ export default function Contacts (props){
             <p>mr.whiskaz@catnap.meow</p>
             </div>  
         </div>
-    )
+    )                                                                                                                                                                                                                                                                                                                                                                                       
 }
