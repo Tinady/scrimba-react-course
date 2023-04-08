@@ -8,9 +8,9 @@ export default function Cards(props)
        
         <div className="card-container">
            <img className="cards-img" src={props.image}/>
-           <div className="cards-sold"> 
-           <p > SOLD OUT </p>
-           </div>
+           <div className="cards-badge"> 
+            {props.openSpot===0 && <p> Sold Out</p>}
+           </div> 
           
            <p> <img src={star} 
            className="star"/> <span> {props.rating} {props.review}. {props.location}</span> </p>
