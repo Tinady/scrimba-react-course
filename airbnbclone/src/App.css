@@ -46,6 +46,7 @@ body{
     width: 250px;
     line-height: 5px;
     font-size: 12px;
+    position: relative;
 
 
 }
@@ -53,20 +54,20 @@ body{
 
 .cards-img{
 
-    position: realtive;
+   
     border-radius: 2px;
     width: 100%;
 }
 
-.cards-sold{
+.cards-badge {
     position: absolute;
+    top: 36px;
+    left: 36px;
     background-color: white;
-    left: 50px ;
-    margin-top: 10px;
-    padding:2px 5px;
-    border-color:black;
-    border-radius: 10px;
-   
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .contact-container{
