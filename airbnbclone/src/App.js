@@ -6,15 +6,19 @@ import Contacts from "./components/Contacts";
 import cat from "./imgs/cat.jpg"
 import "./App.css"
 import photo1 from "./imgs/KatieZ.png"
+import data from "./data";
 
 export default function App(){
+
+   const card= data.map(data=>{
+        return<Cards image={data.coverImg}/>})
    return(
     <div>
       
          <Navbar/>
         <Hero/>
-        <Cards image={photo1} rating={5.0} review={6}
-        title={"Life Lessons with Katie Zaferes"} price={136}/> 
+        {card}
+       
        
         
 
