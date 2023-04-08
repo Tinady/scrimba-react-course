@@ -11,13 +11,19 @@ import data from "./data";
 export default function App(){
 
    const card= data.map(data=>{
-        return<Cards image={data.coverImg}/>})
+        return<Cards 
+        key={data.id}
+        image={data.coverImg}
+        review={data.stats.reviewCount} rating={data.stats.rating}
+        title={data.title} price={data.price} location={data.location}/>})
    return(
     <div>
       
          <Navbar/>
         <Hero/>
+        <div className="cards-container">
         {card}
+        </div>
        
        
         
