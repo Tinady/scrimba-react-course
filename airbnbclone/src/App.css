@@ -3,12 +3,18 @@
 body{
     box-sizing:border-box ;
     font-family: Poppins, Arial;
+    padding-top:100px ;
 }
 
 .navbar{
     padding: 25px 10px ;
     margin-bottom:16px;
     box-shadow:2px 2px rgba(186, 186, 200,0.5) ;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
 }
 
 .hero{
@@ -37,7 +43,7 @@ body{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    width: 250px;
     line-height: 5px;
     font-size: 12px;
 
@@ -49,6 +55,7 @@ body{
 
     position: realtive;
     border-radius: 2px;
+    width: 100%;
 }
 
 .cards-sold{
@@ -96,4 +103,11 @@ span
 
 .star{
     width:15px;
+}
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
