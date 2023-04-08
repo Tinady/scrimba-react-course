@@ -15,7 +15,9 @@ export default function App(){
         key={data.id}
         image={data.coverImg}
         review={data.stats.reviewCount} rating={data.stats.rating}
-        title={data.title} price={data.price} location={data.location}/>})
+        title={data.title} price={data.price} 
+        openSpot={data.openSpots}
+        location={data.location}/>})
    return(
     <div>
       
