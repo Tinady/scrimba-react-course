@@ -5,25 +5,25 @@ import star from "../imgs/Star.png"
 export default function Cards(props)
 {
     let  badgeText
-    if (props.openSpot===0) {
+    if (props.data.openSpots===0) {
         badgeText="SOLD OUT"
           }
-    else if (props.location=="Online")
+    else if (props.data.location=="Online")
     {
         badgeText="ONLINE"
     }
     return(
        
         <div className="card-container">
-           <img className="cards-img" src={props.image}/>
+           <img className="cards-img" src={props.data.coverImg}/>
            
             {badgeText &&  <div className="cards-badge"> {badgeText} </div> }
           
           
            <p> <img src={star} 
-           className="star"/> <span> {props.rating} {props.review}. {props.location}</span> </p>
-           <p>{props.title}</p>
-           <p><b> From ${props.price}</b> <span>/person</span></p>
+           className="star"/> <span> {props.data.stats.rating} {props.data.stats.reviewCount}. {props.data.location}</span> </p>
+           <p>{props.data.title}</p>
+           <p><b> From ${props.data.price}</b> <span>/person</span></p>
         </div>  
     )
      
