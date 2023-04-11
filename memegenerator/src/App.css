@@ -34,3 +34,61 @@
   color: white;
 }
 
+.meme-container{
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+
+}
+
+
+
+.meme-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  max-width: 800;
+
+  
+ 
+  
+}
+
+
+.meme-input1,
+.meme-input2 {
+ 
+
+  width: 700px;
+  margin-bottom:20px;
+  height: 60px;
+  border-radius: 10px;
+  border-style: solid;
+  text-indent: 20px;
+
+
+  
+  
+}
+
+
+
+
+
+
+
+
+
+.btn{
+  height: 60px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(166, 174, 179);
+  color: white;
+  font-size: 25px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
