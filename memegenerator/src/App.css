@@ -4,7 +4,7 @@
 
 .header{
    height: 70px;
-   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -107,7 +107,7 @@
   margin: 0px 5px;
   font-size: 25px;
   cursor: pointer;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
 .btn:hover{
