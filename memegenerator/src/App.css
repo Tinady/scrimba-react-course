@@ -39,7 +39,7 @@
 
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
  
 
 
@@ -107,17 +107,17 @@
   margin: 0px 5px;
   font-size: 25px;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  background-color:  #5D9FFF;
 
 }
 
 .btn:hover{
-  background: #6e1290;
+  background: #699ff1;
   box-shadow: 2px 2px rgba(81, 5, 70, 0.2);
 }
 
 .btn:active{
-  background: #a614dc;
+  background:  #95baf2;
 }
 
 .memeimg-container{
