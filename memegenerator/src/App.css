@@ -35,13 +35,19 @@
 }
 
 .meme-container{
-  padding:50px 150px 0px 150px;
+ 
 
   display: flex;
   flex-direction: column;
  
 
 
+}
+
+@media screen and (min-width: 600px) {
+  .meme-container {
+    padding:50px 150px 0px 150px;
+  }
 }
 
 
