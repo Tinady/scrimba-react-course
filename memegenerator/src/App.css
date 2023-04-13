@@ -35,7 +35,7 @@
 }
 
 .meme-container{
-  padding:50px 100px;
+  padding:50px 150px 0px 150px;
 
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   justify-content: space-between;
   
   
-  max-width: 3000;
+
 
   
  
@@ -88,15 +88,29 @@
   color: white;
   margin: 0px 5px;
   font-size: 25px;
+  cursor: pointer;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.btn:hover{
+  background: #6e1290;
+  box-shadow: 2px 2px rgba(81, 5, 70, 0.2);
+}
+
+.btn:active{
+  background: #a614dc;
 }
 
 .memeimg-container{
   margin: 10px 5px;
+ 
 
 }
 
 .meme-image{
+
+  border-style: solid;
+  border-color: rgb(118, 112, 115);
   width: 100%;
   border-radius: 10px;
   height: 420px;
