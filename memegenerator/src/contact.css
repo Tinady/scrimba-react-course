@@ -1,0 +1,22 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+   justify-content:space-evenly;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0, 0.5);
+}
+
+.contact-img{
+    height: 200px;
+    width: 200px;
+     
+    align-self: center;
+}
+
+.contact-star{
+    height: 20px;
+    width: 20px;
+}
+
