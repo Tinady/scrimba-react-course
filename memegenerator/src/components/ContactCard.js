@@ -14,10 +14,19 @@ export default function ContactCard(){
     })
 
     const starIcon=contact.isFavorite?filled:empty;
+
+    function Favourite(){
+        setContact(prevContact=>{
+            return {
+                ...prevContact,
+                isFavorite:!prevContact.isFavorite
+            }
+        })
+    }
   return(
     <div className="contact-container">
     <img src={user} className="contact-img"/>
-    <img src={starIcon} className="contact-star"/>
+    <img src={starIcon} className="contact-star" onClick={Favourite}/>
     <h3>{contact.firstName} {contact.lastName} </h3>
     <p >{contact.phone} </p>
     <p>{contact.email}  </p>
