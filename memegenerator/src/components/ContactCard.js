@@ -10,12 +10,14 @@ export default function ContactCard(){
         lastName: "Doe",
         phone: "+1 (719) 555-1212",
         email: "itsmyrealname@example.com",
-        isFavorite: false
+        isFavorite: true
     })
+
+    const starIcon=contact.isFavorite?filled:empty;
   return(
     <div className="contact-container">
     <img src={user} className="contact-img"/>
-    <img src={empty} className="contact-star"/>
+    <img src={starIcon} className="contact-star"/>
     <h3>{contact.firstName} {contact.lastName} </h3>
     <p >{contact.phone} </p>
     <p>{contact.email}  </p>
