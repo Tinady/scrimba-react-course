@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import user from  "../imgs/user.png"
 import filled from "../imgs/start-filled.jpg"
 import empty from "../imgs/start-empty.png"
 
 
 export default function ContactCard(){
-    const [contact, setContact] = React.useState({
+    const [contact, setContact] =useState({
         firstName: "John",
         lastName: "Doe",
         phone: "+1 (719) 555-1212",
