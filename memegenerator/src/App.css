@@ -136,3 +136,24 @@
   border-radius: 10px;
   height: 420px;
 }
+
+.count-container{
+   display: flex;
+   flex-direction: row;
+   background-color: black;
+   align-items: center;
+   justify-content: center;
+   padding: 300px;
+
+}
+
+.count{
+    background-color: rgb(94, 95, 95);
+    width: 100px;
+    border-radius: 50px;
+    
+}
+
+.count h1{
+  padding-left: 40px;
+}
