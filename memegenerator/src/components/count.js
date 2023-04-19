@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
-export default  function Count(number){
+export default  function Count(){
 
-    number=count
+   
     
     const [count, setCount]=useState(0)
      function Add(){
