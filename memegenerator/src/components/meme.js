@@ -8,14 +8,15 @@ export default function Meme(){
          bottomText:'',
          randomImage:"https://i.imgflip.com/1bgw.jpg"
           })
+    
 
- //const [memeImage, setMemeImage]=useState("https://i.imgflip.com/1bgw.jpg")
+ const [AllMemeImageS, setAllMemeImages]=useState(memeData)
 
  function getMemeImage() {
-    const Data= memeData.data.memes;
+    const Data= AllMemeImageS.data.memes;
     let index= Math.floor(Math.random()* Data.length)
     const url= Data[index].url
-    setMemeImage(url)
+    setMeme(prevmeme=>({...prevmeme, randomImage:url }))
 
     console.log(url)
 
@@ -32,7 +33,7 @@ export default function Meme(){
             <button className="btn" onClick={getMemeImage}> Get a new meme image</button>
 
             <div className="memeimg-container">
-                <img  className="meme-image" src={memeImage}/>
+                <img  className="meme-image" src={meme.randomImage}/>
             </div>
 
         </div>
