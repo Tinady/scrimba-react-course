@@ -3,7 +3,13 @@ import memeData from "../memeData"
 
 export default function Meme(){
 
- const [memeImage, setMemeImage]=useState("https://i.imgflip.com/1bgw.jpg")
+    const [meme, setMeme]=useState(
+        {topText:'',
+         bottomText:'',
+         randomImage:"https://i.imgflip.com/1bgw.jpg"
+          })
+
+ //const [memeImage, setMemeImage]=useState("https://i.imgflip.com/1bgw.jpg")
 
  function getMemeImage() {
     const Data= memeData.data.memes;
