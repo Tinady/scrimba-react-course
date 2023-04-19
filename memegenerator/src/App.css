@@ -182,3 +182,12 @@
   margin-right:-20px;
   z-index: 1;
 }
+
+.squares{
+  display: inline-block;
+  margin-right: 2px;
+  border-style: solid;
+  border-color: #5D9FFF;
+  width: 200px;
+  height: 200px;
+}
