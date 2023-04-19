@@ -13,7 +13,7 @@ function App() {
         {/* <Header/>
         <Meme/>  
         <Count/> */
-        <Square/>
+        <Square darkMode={false}/>
 
         }
         
