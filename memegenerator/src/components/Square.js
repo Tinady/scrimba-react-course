@@ -1,15 +1,20 @@
 import React, {useState} from "react";
 import Boxes from "./Boxes";
 
-export default  function Square(props)
+export default  function Square()
 {
-    const [squareElements, setSquareElements]=useState(Boxes)
-     const Style={
-        backgroundColor:props.darkMode?"black":"white"
-     }
+    const [on, setOn]=useState(Boxes.on)
 
-    const squareDivs= squareElements.map(sq=>
-        {return <div style={Style} className="squares" key={sq.id}></div>})
+    function toggle(){
+         setOn(prevState=>!prevState)
+    }
+
+    const Style={
+        backgroundColor:on?"black":"transparent"
+    }
+    const squareDivs=Boxes.map(sq=>
+        {return <div style={Style} onClick={toggle
+        } className="squares" key={sq.id}></div>})
 
     return(
         <div>
