@@ -14,8 +14,8 @@ function App() {
 
   
  
-  const squareDivs=Boxes.map(sq=>
-      (<Square on={boxes.on} key={sq.id}/>))
+  const squareDivs=boxes.map(sq=>
+      (<Square on={sq.on} key={sq.id}/>))
   return (
     <div className="App">
         {/* <Header/>
