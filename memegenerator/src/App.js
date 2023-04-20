@@ -11,9 +11,7 @@ import './App.css';
 function App() {
 
   const [boxes, setBoxes]=useState(Boxes)
-
   
- 
   const squareDivs=boxes.map(sq=>
       (<Square on={sq.on} key={sq.id}/>))
   return (
