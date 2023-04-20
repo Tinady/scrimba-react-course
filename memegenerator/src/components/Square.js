@@ -8,7 +8,8 @@ export default  function Square(props)
        const [on, setOn]=useState(props.on)
 
        const Style={
-        backgroundColor:on?"black":"transparent"
+        backgroundColor:on?"black":"transparent",
+        borderRadius:on? "50%":"0" 
     }
 
      function toggle()
