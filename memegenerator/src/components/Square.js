@@ -9,7 +9,7 @@ export default  function Square(props)
 
        const Style={
         backgroundColor:on?"black":"transparent",
-        borderRadius:on? "0%":"20%" 
+        borderRadius:on? "0%":"12%" 
     }
 
      function toggle()
