@@ -12,13 +12,9 @@ export default  function Square(props)
         borderRadius:on? "0%":"12%" 
     }
 
-     function toggle()
-     {
-          setOn(prevState=>!prevState)
-     }
 
     return(
-        <div style={Style} onClick={toggle} className="squares">  </div>
+        <div style={Style} onClick={props.toggle} className="squares">  </div>
     )
 }
 
