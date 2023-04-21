@@ -6,16 +6,18 @@ export default function Forms(){
         firstName:'', 
         lastName:'',
         Email:'',
-        comments:''
+        comments:'',
+        isFriendly:true
          })
     console.log(formData)
     
      function handleChange (event)
      {
+        let {name, value, type, checked}= event.target
         setFormData(prevState=>
             {return {...prevState, 
-                      [event.target.name]:event.target.value}
-            })
+            [name]: type="checkbox"?checked:value}
+                     })
      }
 
   return (
@@ -49,6 +51,15 @@ export default function Forms(){
      name="comments"
      value={formData.comments}
 />
+<input 
+  type="checkbox"
+  checked={formData.isFriendly}
+  onChange={handleChange}
+  name="isFriendly"
+  id="isFriendly"
+  />
+<label htmlFor="isFriendly"> Are u friendly</label>
+    
 
 </form>)
     
