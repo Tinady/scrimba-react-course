@@ -201,7 +201,9 @@
     
 }
 
-.form-container input{
+.form-container input[type="email"], 
+.form-container input[type="text"],
+.form-container textarea{
   margin:5px;
   display: block;
 }
