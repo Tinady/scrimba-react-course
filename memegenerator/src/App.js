@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+ import React, {useState} from 'react';
 import Header from './components/Header';
 import Meme from './components/meme';
 import ContactCard from './components/ContactCard';
@@ -8,17 +8,30 @@ import Boxes from './components/Boxes';
 import './contact.css'
 import './App.css';
 
-function App() {
+export default function App() {
 
   const [boxes, setBoxes]=useState(Boxes)
   
-  function toggle(){
-     console.log("Clicked")
-  }
+  function toggle(id){
+     
+    setBoxes(prevState=>
+      {return prevState.map((square)=>
+        {return square.id===id?{...prevState, 
+          on:!square.on}:{...prevState}})
+      }
+      
+    )
+
+    console.log(id)
+
+    }
 
 
   const squareDivs=boxes.map(sq=>
-      (<Square toggle={toggle} on={sq.on} key={sq.id}/>))
+      (<Square handleClick={toggle} 
+        key={sq.id}
+        on={sq.on} 
+        id={sq.id}/>))
   return (
     <div className="App">
         {/* <Header/>
@@ -32,4 +45,4 @@ function App() {
   );
 }
 
-export default App;
+
