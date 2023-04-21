@@ -8,6 +8,7 @@ import Boxes from './components/Boxes';
 import jokeData from './components/jokeData';
 import Jokes from './components/joke';
 import Messages from './components/Messages';
+import Forms from './components/form';
 import './contact.css'
 import './App.css';
 
@@ -47,8 +48,10 @@ export default function App() {
         <Meme/>  
         <Count/> 
        {squareDivs} */
-        /* {jokeelements} */}
-       <Messages/>
+        /* {jokeelements} 
+       <Messages/> */}
+       <Forms/>
+       
         
         
        </div>
