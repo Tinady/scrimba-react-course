@@ -11,10 +11,10 @@ export default  function Square(props)
         backgroundColor:on?"black":"transparent",
         borderRadius:on? "0%":"12%" 
     }
+        
 
-
-    return(
-        <div style={Style} onClick={props.toggle} className="squares">  </div>
+    return( 
+        <div style={Style} onClick={()=>props.handleClick(props.id)} className="squares">  </div>
     )
 }
 
