@@ -12,8 +12,13 @@ function App() {
 
   const [boxes, setBoxes]=useState(Boxes)
   
+  function toggle(){
+     console.log("Clicked")
+  }
+
+
   const squareDivs=boxes.map(sq=>
-      (<Square on={sq.on} key={sq.id}/>))
+      (<Square toggle={toggle} on={sq.on} key={sq.id}/>))
   return (
     <div className="App">
         {/* <Header/>
