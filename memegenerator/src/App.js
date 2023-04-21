@@ -13,25 +13,22 @@ export default function App() {
   const [boxes, setBoxes]=useState(Boxes)
   
   function toggle(id){
-     
-    setBoxes(prevState=>
-      {return prevState.map((square)=>
-        {return square.id===id?{...prevState, 
-          on:!square.on}:{...prevState}})
-      }
-      
-    )
-
-    console.log(id)
+         setBoxes(prevstate=>
+          {return prevstate.map((square)=>{
+            return square.id==id?{...square, on:!square.on}:square;
+         })})
 
     }
 
 
   const squareDivs=boxes.map(sq=>
-      (<Square handleClick={toggle} 
+      (<Square
         key={sq.id}
         on={sq.on} 
-        id={sq.id}/>))
+        handleClick={()=>toggle(sq.id)}
+         />
+         ))
+         
   return (
     <div className="App">
         {/* <Header/>
