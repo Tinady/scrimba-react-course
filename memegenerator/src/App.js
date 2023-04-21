@@ -31,19 +31,21 @@ export default function App() {
   //        />
   //        ))
 
-    const jokeelements= jokeData.map((j)=>
-    {return <Jokes
+    const jokeelements= jokeData.map(j=>
+    {return (<Jokes
          key={j.id}
           setup={j.setup}
-          pinchline={j.punchline}
-             />})
+          punchline={j.punchline}
+             />)
+            
+        })
          
   return (
     <div className="App">
         {/* <Header/>
         <Meme/>  
         <Count/> 
-        {squareDivs} */}
+  {squareDivs} */}
         {jokeelements}
 
         
