@@ -5,7 +5,8 @@ export default function Forms(){
      const [formData , setFormData]= useState({
         firstName:'', 
         lastName:'',
-        Email:''
+        Email:'',
+        comments:''
          })
     console.log(formData)
     
@@ -42,6 +43,12 @@ export default function Forms(){
      value={formData.Email}
 
      />
+
+<textarea  
+     onChange={handleChange}
+     name="comments"
+     value={formData.comments}
+/>
 
 </form>)
     
