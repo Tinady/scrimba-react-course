@@ -197,5 +197,11 @@
     text-indent: 10px;
     font-size: 16px;
    
+   
     
+}
+
+.form-container input{
+  margin:5px;
+  display: block;
 }
