@@ -17,7 +17,7 @@ export default function Forms(){
         let {name, value, type, checked}= event.target
         setFormData(prevState=>
             {return {...prevState, 
-            [name]: type="checkbox"?checked:value}
+            [name]: type==="checkbox"?checked:value}
                      })
      }
 
