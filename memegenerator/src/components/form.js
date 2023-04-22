@@ -59,6 +59,26 @@ export default function Forms(){
   id="isFriendly"
   />
 <label htmlFor="isFriendly"> Are u friendly</label>
+
+<fieldset>
+     <legend> Current Employment Status</legend>
+     <input
+     type="radio"
+     id="unemployed"/>
+     <label htmlFor="unemployed"> Unemployed</label>
+
+     <input
+     type="radio"
+     id="part-time"/>
+     <label htmlFor="part-time">Part-TIme</label>
+  
+     <input
+     type="radio"
+     id="full-time"/>
+     <label htmlFor="full-time"> Full-Time</label>
+
+
+</fieldset>
     
 
 </form>)
