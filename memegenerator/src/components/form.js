@@ -22,7 +22,8 @@ export default function Forms(){
                      })
      }
 
-     function handleSubmit(){
+     function handleSubmit(event){
+           event.preventDefault()
            console.log(formData)
      }
 
