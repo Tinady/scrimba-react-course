@@ -62,20 +62,26 @@ export default function Forms(){
 
 <fieldset>
      <legend> Current Employment Status</legend>
+    
+     <label htmlFor="unemployed">
      <input
      type="radio"
      id="unemployed"/>
-     <label htmlFor="unemployed"> Unemployed</label>
+     Unemployed</label>
 
+     
+     <label htmlFor="part-time">
      <input
      type="radio"
      id="part-time"/>
-     <label htmlFor="part-time">Part-TIme</label>
+          Part-TIme</label>
   
-     <input
-     type="radio"
-     id="full-time"/>
-     <label htmlFor="full-time"> Full-Time</label>
+    
+     <label htmlFor="full-time">
+          <input
+           type="radio"
+           id="full-time"/>
+           Full-Time</label>
 
 
 </fieldset>
