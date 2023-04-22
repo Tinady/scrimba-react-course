@@ -70,6 +70,7 @@ export default function Forms(){
      id="unemployed"
      name="employment"
      value={'unemployed'}
+     checked={formData.employment=== 'unemployed'}
      onClick={handleChange}
      />
      Unemployed</label>
@@ -81,6 +82,7 @@ export default function Forms(){
      id="part-time"
      name="employment"
      value={'part-time'}
+     checked={formData.employment=== 'part-time'}
      onClick={handleChange}
      />
           Part-TIme</label>
@@ -92,6 +94,7 @@ export default function Forms(){
            id="full-time"
            name="employment"
            value={'full-time'}
+           checked={formData.employment=== 'full-time'}
           onClick={handleChange}
            />
            Full-Time</label>
