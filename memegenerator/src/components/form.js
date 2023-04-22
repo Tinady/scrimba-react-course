@@ -8,7 +8,8 @@ export default function Forms(){
         Email:'',
         comments:'',
         isFriendly:true,
-        employment:''
+        employment:'',
+        favColor:''
          })
     console.log(formData)
     
@@ -19,6 +20,10 @@ export default function Forms(){
             {return {...prevState, 
             [name]: type==="checkbox"?checked:value}
                      })
+     }
+
+     function handleSubmit(){
+           console.log(formData)
      }
 
   return (
@@ -71,7 +76,7 @@ export default function Forms(){
      name="employment"
      value={'unemployed'}
      checked={formData.employment=== 'unemployed'}
-     onClick={handleChange}
+     onChange={handleChange}
      />
      Unemployed</label>
 
@@ -83,7 +88,7 @@ export default function Forms(){
      name="employment"
      value={'part-time'}
      checked={formData.employment=== 'part-time'}
-     onClick={handleChange}
+     onChange={handleChange}
      />
           Part-TIme</label>
   
@@ -95,13 +100,31 @@ export default function Forms(){
            name="employment"
            value={'full-time'}
            checked={formData.employment=== 'full-time'}
-          onClick={handleChange}
+          onChange={handleChange}
            />
            Full-Time</label>
 
 
 </fieldset>
+
+<select
+   name="favColor"
+    value={formData.favColor}
+    onChange={handleChange}
+    >
+                
+                <option value={''}>--Choose--</option>
+                <option value={'Red'}>Red</option>
+                <option value={'yellow'}>Yellow</option>
+                <option value={'Green'}>Green</option>
+
+
+
+</select>
+     <br/>
+     <br/>
     
+      <button onClick={handleSubmit}> Submit</button>
 
 </form>)
     
