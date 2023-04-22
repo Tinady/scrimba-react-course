@@ -7,7 +7,8 @@ export default function Forms(){
         lastName:'',
         Email:'',
         comments:'',
-        isFriendly:true
+        isFriendly:true,
+        employment:''
          })
     console.log(formData)
     
@@ -66,21 +67,33 @@ export default function Forms(){
      <label htmlFor="unemployed">
      <input
      type="radio"
-     id="unemployed"/>
+     id="unemployed"
+     name="employment"
+     value={'unemployed'}
+     onClick={handleChange}
+     />
      Unemployed</label>
 
      
      <label htmlFor="part-time">
      <input
      type="radio"
-     id="part-time"/>
+     id="part-time"
+     name="employment"
+     value={'part-time'}
+     onClick={handleChange}
+     />
           Part-TIme</label>
   
     
      <label htmlFor="full-time">
           <input
            type="radio"
-           id="full-time"/>
+           id="full-time"
+           name="employment"
+           value={'full-time'}
+          onClick={handleChange}
+           />
            Full-Time</label>
 
 
