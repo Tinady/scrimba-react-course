@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(194, 72, 194);
+}
+
+.signUp-container{
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    background-color: white;
+    margin-top: 200px;
+    border-radius: 20px;
+}
+
+.signUp-container input[type='email'],
+.signUp-container input[type='text']
+{
+  margin: 20px 0px;
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  display: block;
+}
+
+.signUp-container button{
+    background-color:  rgb(194, 72, 194);
+    margin-right: auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 10px;
+    display: block;
+}
