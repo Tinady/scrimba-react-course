@@ -22,7 +22,8 @@ export default function SignUp ()
     function handleSubmit(event)
     {
             event.preventDefault()
-            console.log(formData)
+            console.log("hey")
+            formData.password===formData.cpassword?console.log("the passwords match"):console.log("the passwords dont match");
     }
 
     return (
@@ -60,6 +61,7 @@ export default function SignUp ()
 
         <button onClick={handleSubmit}>Sign up</button>
         </form>
+
 
         </div>
     )
