@@ -1,43 +1,65 @@
 import React, {useState} from "react";
 
-export default function signUp ()
+export default function SignUp ()
 {
     const [formData, setFormData]= useState(
         { email:'',
           password:'',
-          cpassword:''}
+          cpassword:'',
+          join:true}
     )
 
+    function handleChange(event){
+        let {name, value, type, checked}=event.target
+       setFormData(prevstate=>
+        {
+            return{...prevstate,[name]:type==="checkbox"?checked:value }
+        }
+       )
+
+    }
+    
+    function handleSubmit(event)
+    {
+            event.preventDefault()
+            console.log(formData)
+    }
 
     return (
         <div className="signUp-container">
+
+        <form>
         <input
           type="email"
           placeholder="hello@company.com"
           value={formData.email}
           name="email"
-          onChange={handlechange}/>
+          onChange={handleChange}/>
 
         <input
           type="text"
           placeholder="enter your new password"
           value={formData.password}
           name="password"
-          onChange={handlechange}/>
+          onChange={handleChange}/>
 
         <input
           type="text"
           placeholder="confirm your password"
           value={formData.cpassword}
           name="cpassword"
-          onChange={handlechange}/>
+          onChange={handleChange}/>
 
-        <input
+       <label> <input
           type="checkbox"
-          value={formData.password}
-          name="newsletter"
-          onChange={handlechange}/>
+          checked={formData.join}
+          name="join"
+          onChange={handleChange}/>
+          I want to join the newsletter
+          </label>
 
+        <button onClick={handleSubmit}>Sign up</button>
+        </form>
 
         </div>
     )
