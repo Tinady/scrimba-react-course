@@ -11,7 +11,7 @@ export default function Forms(){
         employment:'',
         favColor:''
          })
-    console.log(formData)
+    
     
      function handleChange (event)
      {
