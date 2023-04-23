@@ -9,8 +9,9 @@ import jokeData from './components/jokeData';
 import Jokes from './components/joke';
 import Messages from './components/Messages';
 import Forms from './components/form';
+import SignUp from './components/signUp';
 import './contact.css'
-import './App.css';
+import './signUp.css';
 
 export default function App() {
 
@@ -44,13 +45,14 @@ export default function App() {
          
   return (
     <div className="App">
-        {/* <Header/>
+        {/* * <Header/>
         <Meme/>  
         <Count/> 
        {squareDivs} */
         /* {jokeelements} 
-       <Messages/> */}
-       <Forms/>
+       <Messages/> 
+       <Forms/> */}
+       <SignUp/>
        
         
         
