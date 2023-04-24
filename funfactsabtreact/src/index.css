@@ -23,6 +23,10 @@ nav {
     box-shadow:20px 20px rgba(0,0, 0, 1);
 }
 
+nav.dark{
+    background-color: black;
+}
+
 .nav--logo_text, .nav--title {
     margin: 0;
 }
@@ -42,6 +46,45 @@ nav {
 .nav--icon {
     height: 30px;
     margin-right: 10px;
+}
+
+.toggle-container{
+    margin-left: 50px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    
+}
+
+.toggle-slider{
+    
+    background-color: black;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+   
+}
+
+.toggle-circle{
+    margin-right: -26px;
+    background-color: rgb(253, 247, 247);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    z-index: 999;
+    
+    
+
+}
+
+nav.dark .toggle-slider{
+    background-color: white;
+}
+
+nav.dark .toggle-circle{
+    background-color: rgb(5, 0, 0);
+    margin-right: -54px;
 }
 
 
@@ -85,46 +128,3 @@ nav {
 
 
 
-input[type="checkbox"].toggle{
-    display: none;
-    
-    
-}
-input[type="checkbox"].toggle + label{
-    display:flex;
-    align-items: center ;
-}
-
-
-
-input[type="checkbox"].toggle + label::before{
-    background-color: rgb(151, 147, 147);
-    width: 50px;
-    height: 20px;
-    content: "";
-    margin: 0px 14px;
-    border-radius: 20px;
-    padding: 0;
-}
-
-input[type="checkbox"].toggle + label::after{
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 25px;
-    height: 20px;
-    content: "";
-    margin: 0px 14px;
-    border-radius: 50%;
-}
-
-input[type="checkbox"].toggle:checked + label::after{
-     transform: translate(100%);
-    background-color: rgb(0, 0, 0);
-    
-}
-
-
-input[type="checkbox"].toggle:checked + label::before{
-    background-color: rgb(78, 77, 77);
-}
-    
