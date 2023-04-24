@@ -7,14 +7,14 @@ import "./index.css"
 
 
  function App(){
-    const[darkMode, setDarkMode]=useState(false)
+    const[darkMode, setDarkMode]=useState(true)
       function toggle(){
            setDarkMode(prevState=>!prevState)
 
       }
 
    return(<div>
-     <Navbar darkmode={darkMode} handleclick={toggle}       />
+     <Navbar darkmode={darkMode} handleClick={toggle}       />
     <MainContent darkmode={darkMode} />
    
     </div>) 
