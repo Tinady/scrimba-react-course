@@ -10,8 +10,9 @@ import Jokes from './components/joke';
 import Messages from './components/Messages';
 import Forms from './components/form';
 import SignUp from './components/signUp';
-import './contact.css'
-import './signUp.css';
+//import './contact.css'
+// import './signUp.css';
+import './App.css';
 
 export default function App() {
 
@@ -45,15 +46,15 @@ export default function App() {
          
   return (
     <div className="App">
-        {/* * <Header/>
+         <Header/>
         <Meme/>  
-        <Count/> 
-       {squareDivs} */
-        /* {jokeelements} 
+        {/* <Count/> 
+       {squareDivs}
+       {jokeelements} 
        <Messages/> 
-       <Forms/> */}
+       <Forms/> 
        <SignUp/>
-       
+        */}
         
         
        </div>
