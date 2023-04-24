@@ -124,7 +124,30 @@
 
 .memeimg-container{
   margin: 10px 5px;
+  position: relative;
  
+
+}
+
+.Top-text{
+  position: absolute;
+  top: -50px;
+  left: 150px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-transform: uppercase;
+  width: 50%;
+
+}
+
+.bottom-text{
+  position: absolute;
+  bottom: -30px;
+  left: 150px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-transform: uppercase;
+  width: 200px;
 
 }
 
