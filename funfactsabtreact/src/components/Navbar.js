@@ -3,21 +3,27 @@ import logo from "../imgs/react-logo.png"
 
 function  Navbar(props){
 
-    const Style={
-         backgroundColor:props.darkmode?"black":"white"
-    }
+    
 
 
     return( 
 
-       <nav style={Style}>
+       <nav className={props.darkmode?"dark":""}>
        <img src={logo} className="nav--icon" />
             <h3 className="nav--logo_text">ReactFacts</h3>
             <h4 className="nav--title">React Course - Project 1</h4>
+          
+          <div className="toggle-container">
+               
+               <div className="toggle-circle"></div>
+               <div className="toggle-slider"
+                onClick={props.handleClick}> </div>
+              
+              
+               
+               </div>
+          
             
-            <div>
-               <div className={}
-            </div>
       </nav>
     )
 
