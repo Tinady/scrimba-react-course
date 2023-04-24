@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
-    background-color:black;
+    
    
     
 }
@@ -16,11 +16,11 @@ body {
 nav {
     display: flex;
     align-items: center;
- 
-    background-color: #282D35;
     height: 90px;
     padding: 30px 25px;
     margin-bottom:0;
+    border-style: none;
+    box-shadow:20px 20px rgba(0,0, 0, 1);
 }
 
 .nav--logo_text, .nav--title {
@@ -35,7 +35,7 @@ nav {
 }
 
 .nav--title {
-    color: #DEEBF8;
+    color: #9dc5ed;
     font-weight: 600;
 }
 
@@ -46,7 +46,7 @@ nav {
 
 
 .main-title{
-    color:white;
+   
     font-weight:700;
    margin: 0px;
    font-size:39px ;
@@ -57,7 +57,7 @@ nav {
 
 .container{
     
-    margin-top: 0px;
+    margin: 0px;
     padding: 50px 20px;
     background-image:url(./imgs/react-background.png) ;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ nav {
 
 .lists li{
    line-height: 50px;
-    color: white;
+   
 }
 
 .lists li::marker{
