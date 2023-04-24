@@ -47,15 +47,15 @@ export default function App() {
          
   return (
     <div className="App">
-         {/* <Header/>
+         <Header/>
         <Meme/>  
-         <Count/> 
+         {/* <Count/> 
        {squareDivs}
        {jokeelements} 
        <Messages/> 
        <Forms/> 
-       <SignUp/> */}
-       <WindowTracker/>
+       <SignUp/>
+       <WindowTracker/> */}
         
         
         
