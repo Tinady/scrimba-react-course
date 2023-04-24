@@ -104,7 +104,8 @@ nav.dark .toggle-circle{
     padding: 50px 20px;
     background-image:url(./imgs/react-background.png) ;
     background-repeat: no-repeat;
-    background-position: right -11% top 70% ;
+    background-position: right center;
+    height: 88vh;
 
 
   
