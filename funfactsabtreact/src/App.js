@@ -15,7 +15,7 @@ import "./index.css"
 
    return(<div>
      <Navbar darkmode={darkMode} handleclick={toggle}       />
-    <MainContent darkmode={darkMode} handleClick={toggle}  />
+    <MainContent darkmode={darkMode} />
    
     </div>) 
  }
