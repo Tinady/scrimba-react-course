@@ -14,14 +14,10 @@ function  Navbar(props){
        <img src={logo} className="nav--icon" />
             <h3 className="nav--logo_text">ReactFacts</h3>
             <h4 className="nav--title">React Course - Project 1</h4>
-            <input type="checkbox"
-                   onClick={props.handleClick}
-                   id="checkBox"
-                   className="toggle"
-                   />
-          <label htmlFor="checkBox"></label>
-          
-
+            
+            <div>
+               <div className={}
+            </div>
       </nav>
     )
 
