@@ -10,6 +10,7 @@ import Jokes from './components/joke';
 import Messages from './components/Messages';
 import Forms from './components/form';
 import SignUp from './components/signUp';
+import WindowTracker from './components/windowTracker';
 //import './contact.css'
 // import './signUp.css';
 import './App.css';
@@ -46,15 +47,16 @@ export default function App() {
          
   return (
     <div className="App">
-         <Header/>
+         {/* <Header/>
         <Meme/>  
-        {/* <Count/> 
+         <Count/> 
        {squareDivs}
        {jokeelements} 
        <Messages/> 
        <Forms/> 
-       <SignUp/>
-        */}
+       <SignUp/> */}
+       <WindowTracker/>
+        
         
         
        </div>
