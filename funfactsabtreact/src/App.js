@@ -7,7 +7,7 @@ import "./index.css"
 
 
  function App(){
-    const[darkMode, setDarkMode]=useState(true)
+    const[darkMode, setDarkMode]=useState(false)
       function toggle(){
            setDarkMode(prevState=>!prevState)
 
