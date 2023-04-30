@@ -1,7 +1,5 @@
 body{
   background: rgb(11, 36, 52);
-  display: flexbox;
-  align-items: center;
-  justify-content: center;
+   padding: 100px;
   
 }
