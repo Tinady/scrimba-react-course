@@ -4,7 +4,7 @@ import "./Container.css"
 export default  function Die(props){
     return(
         <div  className="die-container">
-         <div>{props.value}</div>
+         <p>{props.value}</p>
         </div>
     )
 }
