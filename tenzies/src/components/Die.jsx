@@ -3,8 +3,8 @@ import "./Container.css"
 
 export default  function Die(props){
     return(
-        <p className="die-container">
-        {props.value}</p>
+        <h2 className="die-container">
+        {props.value}</h2>
        
     )
 }
