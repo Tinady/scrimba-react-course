@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Book from './components/Book'
+import BookList from './components/BookList'
 import './App.css'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     </nav>
     <Routes>
       <Route  path="/" element={<Home/>}/>
-      <Route path='/books'  element={<Book/>}/>
+      <Route path='/books'  element={<BookList/>}/>
+      <Route path='/books/:id' element={<Book/>}/>
     </Routes>
     
     </>    
