@@ -3,6 +3,8 @@ import { Link, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Book from './components/Book'
 import BookList from './components/BookList'
+import NewBook from './components/NewBook'
+import NotFound from './components/NotFound'
 import './App.css'
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Route  path="/" element={<Home/>}/>
       <Route path='/books'  element={<BookList/>}/>
       <Route path='/books/:id' element={<Book/>}/>
+      <Route path='/books/new' element={<NewBook/>}/>
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
     
     </>    
