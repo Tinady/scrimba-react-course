@@ -21,7 +21,7 @@ function App() {
     </nav>
     <Routes>
       <Route  path="/" element={<Home/>}/>
-       <Route path='/books' element={<BookLayout/> }>
+       <Route path='/books' element={<BookLayout/>}>
         <Route index element={<BookList/>}/>
         <Route path=':id' element={<Book/>}/>
         <Route path='new' element={<NewBook/>}/>
