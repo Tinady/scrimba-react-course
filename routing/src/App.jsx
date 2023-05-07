@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { NavLink,Link, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Book from './components/Book'
 import BookList from './components/BookList'
@@ -15,7 +15,9 @@ function App() {
     <>
     <nav>
       <ul>
-        <li><Link to='/'>Home</Link></li>
+        <li><NavLink to='/'style={({isActive})=>{
+         return isActive?{color:'black'}:{}
+        }}>Home</NavLink></li>
         <li><Link to='/books'>Books</Link></li>
       </ul>
     </nav>
